@@ -8,15 +8,15 @@ const Home = (props) => {
             <header className="header-container">
                 <div className="header-container-items">
                     <h1>Logo</h1>
-                    <div className="nav-bar">
+                    <nav className="nav-bar">
                         <ul>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">RESUME</a></li>
-                            <li><a href="">ABOUT</a></li>
-                            <li><a href="">CONTACT</a></li>
+                            <li><a href="http://localhost:3000/">HOME</a></li>
+                            <li><a href="http://localhost:3000/resume">RESUME</a></li>
+                            <li><a href="http://localhost:3000/about">ABOUT</a></li>
+                            <li><a href="http://localhost:3000/contact">CONTACT</a></li>
                         </ul>
 
-                    </div>
+                    </nav>
                 </div>
             </header>
             <main className="main-container">
