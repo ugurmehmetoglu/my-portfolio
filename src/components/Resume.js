@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 import './resume.css'
-import { Document, Page } from 'react-pdf';
+import { Document, Page, pdfjs } from 'react-pdf';
 import pdf from './resume.pdf'
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 const Resume = () => {
  
 
@@ -15,20 +18,7 @@ const Resume = () => {
 
     return (
         <div className="resume">
-            <header className="header-container">
-                <div className="header-container-items">
-                    <h1>Logo</h1>
-                    <nav className="nav-bar">
-                        <ul>
-                            <li><a href="http://localhost:3000/">HOME</a></li>
-                            <li><a href="http://localhost:3000/resume">RESUME</a></li>
-                            <li><a href="http://localhost:3000/about">ABOUT</a></li>
-                            <li><a href="http://localhost:3000/contact">CONTACT</a></li>
-                        </ul>
-
-                    </nav>
-                </div>
-            </header>
+            
             <main className="main-container">
               <div className="resume-pdf">
               <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
