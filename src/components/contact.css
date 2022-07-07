@@ -1,0 +1,74 @@
+.main-container-contact {
+    background-color:darkslategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.main-container-contact h2{
+color:#e8ba7d;
+margin-top:40px;
+text-align: center;
+}
+
+.main-container-contact h3{
+    color:antiquewhite;
+    margin-top:40px;
+}
+
+
+.main-container-contact hr{
+    color:antiquewhite;
+     width: 60px;
+     height: 3px;
+     background-color: antiquewhite;
+     
+}
+
+.main-contact-form{
+    height:500px;
+}
+
+.main-contact-form form{
+    display: flex;
+  flex-direction: column;
+  
+    
+    
+}
+.main-contact-form label {
+color:#e8ba7d;
+margin-top:30px
+
+}
+
+.main-contact-form input{
+margin-bottom:15px;
+width: 350px;
+height: 30px;
+border-radius: 10px;
+border-color:#e8ba7d;
+font-size: 14px
+
+}
+.main-contact-form input[placeholder="Enter Your Message"]{
+    margin-bottom:15px;
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+    border-color:#e8ba7d;
+    font-size: 18px;
+    height: 90px;
+    
+    }
+    .main-contact-form input:last-child{
+        width:100px;
+        background-color:#e8ba7d;
+        color:darkslategray;
+        font-weight:bold;
+        margin-top:18px;
+
+    }

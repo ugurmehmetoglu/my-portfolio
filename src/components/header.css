@@ -8,10 +8,12 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    height:90px;
   
 }
 .header-container-items h1 {
-margin-left: 40px
+margin-left: 40px;
+
 }
 
 .nav-bar{
@@ -24,15 +26,16 @@ margin-left: 40px
     flex-direction: row;
     align-items: center;
     list-style-type: none;
+    font-weight: 700;
     
 }
 
 .nav-bar li{
     margin-right: 40px;
     text-decoration: none;
-    font-weight: 600;
-    letter-spacing: .5px;
    
+    letter-spacing: .5px;
+   cursor: pointer;
     
 
 }
@@ -41,5 +44,11 @@ margin-left: 40px
 .nav-bar a {
     text-decoration: none;
     color:darkslategray;
+    
+}
+
+.nav-bar a:hover{
+    text-decoration: underline 2px;
+    text-decoration-color: darkslategray;
     
 }

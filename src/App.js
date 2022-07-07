@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Home from './components/Home';
 import Resume from './components/Resume'
 import About from './components/About'
 import Header from './components/Header'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Contact from './components/Contact'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />}/>
 
         </Routes>
       </div>

@@ -1,6 +1,6 @@
 
 
-.main-container{
+.main-container {
     background-color:darkslategray;
     display: flex;
     flex-direction: column;
@@ -10,9 +10,12 @@
 }
 .main-container div{
     height:400px;
+    width:400px;
 }
 .main-container  h1{
-    color:white;
+    color:antiquewhite;
+    text-align: center;
+    
 }
 .main-container img{
     width: 240px;
@@ -35,7 +38,7 @@
 }
 .main-container button {
     margin-right:8px;
-    margin-left: 26px;
+    margin-left: 40px;
     width: 130px;
     height:35px;
     color: darkslategray;
