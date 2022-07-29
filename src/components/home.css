@@ -20,10 +20,10 @@
 .main-container img{
     width: 240px;
     height: 240px;
-    margin-top:30px;
+    margin-top:40px;
     border-radius:50%;
     object-fit: cover;
-    object-position:50% 50%;
+    object-position:top;
     
 }
 .main-container p{
@@ -44,4 +44,9 @@
     color: darkslategray;
     margin-top:35px;
     border-radius: 4px;
+}
+
+.main-container button:hover{
+    opacity:0.8;
+    background: antiquewhite;
 }

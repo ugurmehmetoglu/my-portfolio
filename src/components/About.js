@@ -7,6 +7,7 @@ const About = () => {
         
             <main className="main-container">
                 <h1>ABOUT ME</h1>
+                <hr />
                 <p>I'm a self-taught software engineer based in Los Angeles, CA. </p>
 
                 <p>My passion is developing web applications. I love programming and systematically figuring out ways to build more efficient and usable systems. I’m an autonomous learner who works well onsite, in a team environment, and communicates effectively. I enjoy challenging myself with new problems and overcoming obstacles along the way.</p>

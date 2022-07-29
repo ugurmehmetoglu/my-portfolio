@@ -9,7 +9,7 @@
 
 }
 .main-container-contact h2{
-color:#e8ba7d;
+color:antiquewhite;
 margin-top:40px;
 text-align: center;
 }
@@ -51,7 +51,9 @@ width: 350px;
 height: 30px;
 border-radius: 10px;
 border-color:#e8ba7d;
-font-size: 14px
+font-size: 14px;
+padding: 8px 12px;
+
 
 }
 .main-contact-form input[placeholder="Enter Your Message"]{
@@ -62,7 +64,7 @@ font-size: 14px
     border-color:#e8ba7d;
     font-size: 18px;
     height: 90px;
-    
+
     }
     .main-contact-form input:last-child{
         width:100px;
@@ -70,5 +72,11 @@ font-size: 14px
         color:darkslategray;
         font-weight:bold;
         margin-top:18px;
+        padding: 0px;
+      
 
     }
+    .main-contact-form input:last-child:hover{
+        opacity: 0.8;
+    }
+   

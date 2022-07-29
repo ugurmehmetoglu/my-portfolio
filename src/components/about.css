@@ -15,7 +15,7 @@
 .main-container h1{
     margin-top:30px;
     font-size: 24px;
-    color:#e8ba7d;
+    color:antiquewhite;
     font-family: monospace;
 }
 .main-container ul{
@@ -28,4 +28,18 @@
     font-family: monospace;
     margin-left: 2rem;
 }
+.main-container hr{
+    color:antiquewhite;
+     min-width: 100px;
+     height: 3px;
+     background-color:#e8ba7d ;
+     
+     
+}
 
+@media screen and (max-width: 767px){
+    .main-container{
+       
+       
+    }
+}

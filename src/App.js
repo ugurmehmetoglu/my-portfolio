@@ -4,11 +4,12 @@ import Resume from './components/Resume'
 import About from './components/About'
 import Header from './components/Header'
 import Contact from './components/Contact'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 
 
 
 function App() {
+ 
   return (
 
     <Router>

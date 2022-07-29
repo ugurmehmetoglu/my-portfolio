@@ -27,6 +27,8 @@ margin-left: 40px;
     align-items: center;
     list-style-type: none;
     font-weight: 700;
+    margin-right:40px;
+    
     
 }
 
@@ -52,3 +54,51 @@ margin-left: 40px;
     text-decoration-color: darkslategray;
     
 }
+
+.burger-menu {
+    display: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .line {
+    height: 2px;
+    width: 35px;
+    margin: 0.5rem 0;
+    background: darkslategray;
+    transition: transform 0.75s ease, opacity 0.75s ease;
+  }
+  .model{
+      display: none;
+  }
+
+
+  @media screen and (max-width: 767px) {
+      .main-container{
+          width:100%;
+      }
+    .burger-menu {
+      display: block;
+      cursor: pointer;
+      margin-top: 16px;
+    margin-right: 10px;
+      
+      
+    }
+    
+    .nav-bar ul{
+        display: none;
+    }
+    .model{
+        display: none;
+        width:100vw;
+        height:100vh;
+        background:red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    .model.active{
+        display:block;
+    }
+  }

@@ -1,22 +1,33 @@
 import React from 'react'
 import './home.css'
 
+import image from './IMG_3918.jpg'
+import {useNavigate} from 'react-router-dom'
+import './resume.pdf'
+
 
 const Home = () => {
+    const navigate = useNavigate();
+ const navigateToContact = () => {
+   navigate('/contact')
+ }
     return (
         <div className="home">
             
             <main className="main-container">
-                <img src="https://media-exp1.licdn.com/dms/image/C5603AQFpwHq_hOPy8A/profile-displayphoto-shrink_100_100/0/1655257491882?e=1661385600&v=beta&t=t6fOi5-Ns1Be63XemoRjgfpJAK535TFogCujRyJGxAQ" alt=""/>
+                
+                <img src={image} alt=""/>
                 <div>
                     <h1>UGUR MEHMETOGLU</h1>
                     <hr/>
                     <p>Software Engineer, in Los Angeles</p>
-                    <button>Get In Touch</button>
-                    <button>Download Resume</button>
+                    <button onClick={navigateToContact}>Get In Touch</button>
+                    <a href={require("./resume.pdf")} download="./resume.pdf">
+                    <button type="button">Download Resume</button>
+                    </a>
                 </div>
                 
-
+             
             </main>
             
            
