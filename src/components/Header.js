@@ -21,10 +21,10 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div>
-                    <div className="burger-menu" open={open} onClick={() => setOpen(!open)}>
-                        <div className="line"></div>
-                        <div className="line"></div>
-                        <div className="line"></div>
+                    <div className= {`burger-menu ${open ? 'open' : null}`}  open={open} onClick={() => setOpen(!open)}>
+                        <div className="bar-one"></div>
+                        <div className="bar-two"></div>
+                        <div className="bar-three"></div>
                     </div>
                     <div className={`model ${open ? 'active' : null}`} >
                         <ul >
@@ -33,7 +33,7 @@ const Header = () => {
                             <li onClick={() => setOpen(false)}><Link to="/about">ABOUT</Link></li>
                             <li onClick={() => setOpen(false)}><Link to="/contact">CONTACT</Link></li>
                         </ul>
-                        <button onClick={() => setOpen(false)}>close</button>
+                        {/* <button onClick={() => setOpen(false)}>close</button> */}
                     </div>
 
                 </div>

@@ -22,7 +22,7 @@ const Home = () => {
                     <hr/>
                     <p>Software Engineer, in Los Angeles</p>
                     <button onClick={navigateToContact}>Get In Touch</button>
-                    <a href={require("./resume.pdf")} download="./resume.pdf">
+                    <a href={require("./resume1.pdf")} download="./resume1.pdf">
                     <button type="button">Download Resume</button>
                     </a>
                 </div>

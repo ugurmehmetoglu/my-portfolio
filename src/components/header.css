@@ -60,45 +60,131 @@ margin-left: 40px;
     padding: 0.5rem;
     cursor: pointer;
   }
-  .line {
-    height: 2px;
-    width: 35px;
-    margin: 0.5rem 0;
-    background: darkslategray;
-    transition: transform 0.75s ease, opacity 0.75s ease;
-  }
+  
   .model{
       display: none;
   }
 
+  
 
-  @media screen and (max-width: 767px) {
-      .main-container{
+
+  @media screen and (max-width: 768px) {
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.bar-one,
+  .bar-two,
+  .bar-three{
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: darkslategray;
+    transition: all 0.5s ease-out;
+   
+  }
+  .bar-one,
+ .bar-three {
+  transform: rotate(0);
+}
+.bar-two {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.open .bar-one {
+    transform: rotate(45deg) translate(5px,5px);
+    
+  }
+    
+  .open  .bar-two {
+      opacity: 0;
+      /* transform: translateX(20px); */
+    }
+  .open  .bar-three {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  
+
+    
+    .main-container{
           width:100%;
       }
     .burger-menu {
       display: block;
       cursor: pointer;
       margin-top: 16px;
-    margin-right: 10px;
+      margin-right: 10px;
+    
       
       
     }
     
     .nav-bar ul{
         display: none;
+      
+        
     }
     .model{
-        display: none;
+        
         width:100vw;
-        height:100vh;
-        background:red;
+        min-height:200px;
+      
         position: absolute;
         top: 0;
         left: 0;
         z-index: 999;
+        opacity:1;
+   
+
     }
-    .model.active{
-        display:block;
+    .model.active {
+        display:flex;
+        flex-direction: column;
+        margin-top:90px;
+        background:#c2b9b0;
+        align-items: flex-start;
+        
+        
     }
+    
+    
+    .model.active  li {
+        text-decoration: none;
+      
+        font-weight: 600;
+        font-size: 22px;
+        padding-left:2rem;
+        margin: 12px 0;
+       
+    }
+    .model.active ul{
+        display:flex;
+        flex-direction: column;
+        min-height:200px;
+        margin-right:20px;
+        font-size: 20px;
+        list-style-type: none;
+       
+        width:100%;
+       
+        
+       
+    }
+    .model.active ul li:hover {
+        
+        background:#907163;
+        width:100%;
+        color:white;
+        
+    }
+    .model.active li a:hover {
+        color:darkslategray;
+    }
+    .model.active  a{
+        text-decoration: none;
+        color: antiquewhite;
+    }
+   
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './resume.css'
 import { Document, Page, pdfjs } from 'react-pdf';
-import pdf from './resume.pdf'
+import pdf from './resume1.pdf'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
