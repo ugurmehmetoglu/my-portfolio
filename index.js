@@ -36,13 +36,13 @@ app.get('/', (req, res) => {
 })
 app.use('/', router)
 
-app.listen(5000, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Example app listening on port ${port}`)
 })
 
 const transporter = mailer.createTransport({
   service: 'gmail',
-  port: 5000,
+  port: port,
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD
