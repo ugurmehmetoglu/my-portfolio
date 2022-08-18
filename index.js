@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 })
 app.use('/', router)
 
-app.listen(port, () => {
+app.listen(5000, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
