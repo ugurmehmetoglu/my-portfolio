@@ -43,7 +43,7 @@ app.listen(port, () => {
 
 const transporter = mailer.createTransport({
   service: 'gmail',
-  port: process.env.PORT,
+  port: 5000,
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD
