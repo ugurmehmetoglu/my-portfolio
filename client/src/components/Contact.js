@@ -4,36 +4,35 @@ import './contact.css'
 
 const Contact = () => {
 
-   
+
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-      const PostMessage = (e) => {
-          e.preventDefault();
-          console.log("afdsgdhfjgkh")
-          console.log(name,email, message)
-          fetch("http://localhost:5000/contact",{
-              method:"post",
-              headers:{
-                "Content-Type":"application/json"
-                },
-              body:JSON.stringify({
-                  name,
-                  email,
-                  message
-              })
-          }).then(res => res.json())
-          .then(data => {
-              console.log(data)
-              setMessage('')
-              setName('')
-              setEmail('')
-          }).catch(err => {
-              console.log(err)
-          })
-      }
+    const PostMessage = (e) => {
+        e.preventDefault();
+
+        fetch("/contact", {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                name,
+                email,
+                message
+            })
+        }).then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setMessage('')
+                setName('')
+                setEmail('')
+            }).catch(err => {
+                console.log(err)
+            })
+    }
 
     return (
         <main className="main-container-contact">
