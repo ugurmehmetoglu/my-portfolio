@@ -17,5 +17,5 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "nodemailer-sendgrid-transport": "^0.2.0"
-  },
+  }
 }
