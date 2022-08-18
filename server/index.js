@@ -12,7 +12,6 @@ app.use(bodyParser.json())
 app.use(cors("*"))
 
 
-
 // app.post('/contact', (req, res) => {
 //     console.log("req body",req.body)
 //     const{name, email, message} = req.body
