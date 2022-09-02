@@ -41,6 +41,7 @@
     .main-container p{
        font-size:14px;
        max-width:300px;
+       margin-left:60px;
     }
     .main-container ul{
         max-width:300px;
