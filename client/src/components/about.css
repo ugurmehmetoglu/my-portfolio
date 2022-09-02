@@ -41,7 +41,7 @@
     .main-container p{
        font-size:14px;
        max-width:300px;
-       margin-left:60px;
+       margin-left:75px;
     }
     .main-container ul{
         max-width:300px;
@@ -49,4 +49,8 @@
         margin-top:30px;
         margin-left:60px;
     }
+    .main-container hr{
+        width: 50px;
+    }
+
 }
