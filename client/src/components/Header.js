@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css'
+import logo from './Logo.svg'
 
 const Header = () => {
 
@@ -11,7 +12,9 @@ const Header = () => {
 
         <header className="header-container">
             <div className="header-container-items">
-                <h1>Logo</h1>
+               <a href='/'>
+<img src={logo} alt=""/>
+               </a>
                 <nav className="nav-bar">
                     <ul>
                         <li><Link to="/">HOME</Link></li>

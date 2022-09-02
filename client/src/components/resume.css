@@ -4,18 +4,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     
 }
 @media screen and (max-width:768px){
     .resume-pdf{
-        padding-top:20px;
+        padding-top:50px;
         background-color:darkslategray;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100vh;
+        overflow-x: hidden;
         
         
+    }
+    .react-pdf__Page__canvas {
+        margin: 0 auto;
+        width: 500px!important;
+        height: 100% !important;
     }
 }

@@ -15,29 +15,36 @@
 margin-left: 40px;
 
 }
+.header-container-items img{
+    max-height: 90px;
+    width: 70px;
+    margin-left: 35px;
+   
+}
 
 .nav-bar{
     display:flex;
+    width:100%;
+    justify-content: flex-end;
+    margin-right:20px;
     
 }
 
 .nav-bar ul{
     display: flex;
-    flex-direction: row;
     align-items: center;
     list-style-type: none;
     font-weight: 700;
-    margin-right:40px;
-    
-    
+   
 }
 
 .nav-bar li{
-    margin-right: 40px;
+    margin-right: 80px;
     text-decoration: none;
    
     letter-spacing: .5px;
    cursor: pointer;
+
     
 
 }
